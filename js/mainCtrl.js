@@ -7,7 +7,7 @@ angular.module('itunes').controller('mainCtrl', function($scope, itunesService){
       sortInfo: {fields: ['Song', 'Artist', 'Collection', 'Type'],
                   directions: ['asc']},
       columnDefs: [
-        {field: 'Play', displayName: 'Play', width: '40px', cellTemplate: '<div class="ngCellText" ng-class="col.colIndex()"><a href="{{row.getProperty(col.field)}}"><img src="http://www.icty.org/x/image/Miscellaneous/play_icon30x30.png"></a></div>'},
+        {field: 'play', displayName: 'Play', width: '40px', cellTemplate: '<div class="ngCellText" ng-class="col.colIndex()"><a href="{{row.getProperty(col.field)}}" target="_blank"><img src="http://www.icty.org/x/image/Miscellaneous/play_icon30x30.png"></a></div>'},
         {field: 'artist', displayName: 'Artist'},
         {field: 'song', displayName: 'Song Title'},
         {field: 'collection', displayName: 'Collection'},
